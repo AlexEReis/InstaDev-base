@@ -5,8 +5,8 @@ export function Logo() {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="178.000000pt"
-      height="77.000000pt"
+      width="148.000000pt"
+      height="47.000000pt"
       viewBox="0 0 178.000000 77.000000"
       preserveAspectRatio="xMidYMid meet"
     >
