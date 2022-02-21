@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import get from 'loadsh/get';
 import { TextStyleVariantMap } from "../../foundation/Text";
+import { breakpointsMedia } from "../../../theme/utils/breakpointsMedia";
 
 const ButtonGhost = css`
   color: ${(props) => get(props.theme, `colors.${props.variant}.color`)};
@@ -24,8 +25,21 @@ export const Button = styled.button`
   font-weight: bold;
   opacity: 1;
 
+  ${breakpointsMedia({
+    xs: css`
+    ${TextStyleVariantMap.smallestException}
+    `,    
+    md: css`
+    ${TextStyleVariantMap.paragraph1}
+    `
+  })}
+
+  ${function(props){
+
+  }}
+
   ${TextStyleVariantMap.smallestException}
-  
+
   ${function (props) {
     if (props.ghost) {
       return ButtonGhost;
